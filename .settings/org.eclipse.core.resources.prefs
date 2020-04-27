@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//WebContent/admin/adminEdit.jsp=UTF-8
+encoding//WebContent/admin/login.jsp=UTF-8
+encoding//WebContent/admin/typeAdd.jsp=UTF-8
+encoding//src/com/systop/servlet/AdminAdd.java=UTF-8
