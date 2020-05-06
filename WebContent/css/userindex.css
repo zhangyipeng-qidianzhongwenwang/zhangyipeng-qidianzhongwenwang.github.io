@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    width: 60%;
+    height: 43.75rem;
+    margin: auto;
+}
+.fenge{
+    width: .0625rem;
+    height: .625rem;
+    line-height: 2.1875rem;
+    background-color: #575757;
+    display: inline-block;
+}
+li{
+    list-style-type:none;
+}
+.title{
+    width: 100%;
+    height: 2.1875rem;
+    background-color: #f7f7f7;
+}
+.title a{
+    color: #575757;
+    line-height: 2.1875rem;
+    font-size: .75rem;
+    margin: 0 .625rem;
+}
+.title_right li{
+    float: right;
+}
+a{
+    text-decoration: none;    
+}
+.title_left li{
+    display: inline;
+    float: left;
+}
+.title_right .login{
+    color: #262626;
+    font-size: .8125rem;
+}
+.game{
+    width: 100%;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top .logo{
+    display: inline-block;
+    float: left;
+}
+.shujia{
+    float: right;
+    width: 7.5rem;
+    height: 2.5rem;
+    line-height:40px;
+    border: .0625rem solid #575757;
+    margin-top: 1.375rem;
+    text-align: center;
+}
+.search{
+    width: 24.375rem;
+    height: 2.5rem;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    border: .0625rem solid #999;
+}
+.search input{
+    height: 100%;
+    border: none;
+    flex: .9;
+    font-size: 1rem;
+}
+.sousuo{
+    background-color: #bf2c24;
+    flex: .1;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.daohang{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #3e3d43;
+}
+.daohang ul{
+    display: flex;
+    justify-content: space-around;
+}
+.daohang ul li a{
+    color: white;
+    line-height: 2.5rem;
+}
+.book-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.book{
+    display: flex;
+    width: 20rem;
+    height: 9.375rem;
+    margin: .625rem .625rem;
+    padding: .625rem .3125rem ;   
+}
+
+.right{
+    float: right;
+}
+.bookname{
+    font-size: 1rem;
+    display: block;
+    margin-top: .3125rem;
+}
+.book img{
+    margin-right: 1.25rem;
+}
+.writename{
+    font-size: .75rem;
+    display: block;
+    margin-top: .3125rem ;
+}
+.info{
+    border: .0625rem solid black;
+    font-size: .75rem;
+    margin: .3125rem 0;
+}
+.jianjie{
+    display: inline-block;
+    font-size: .75rem;
+    margin-top: .3125rem;
+}

@@ -48,4 +48,5 @@ public interface AdminDao {
 	public int deleteAdmin(int id);
 	public int start(int id);
 	public int stop(int id);
+	public boolean enable(Admin admin);
 }

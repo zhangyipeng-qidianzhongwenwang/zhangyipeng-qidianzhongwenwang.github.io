@@ -237,4 +237,33 @@ public class AdminDaoImpl extends BaseDao implements AdminDao {
 		return row;
 	}
 
+	@Override
+	public boolean enable(Admin admin) {
+		boolean yorn=false;
+		String sql = "select status from admin where admin = ? and a_password = ?";
+		try {
+			//获取连接数据库地址
+			super.getConnection();			
+			//创建pstmt
+			pstm = con.prepareStatement(sql);
+			//替换参数
+			pstm.setString(1,admin.getAdmin());
+			pstm.setString(2,admin.getA_password());
+			//执行sql语句
+			rs = pstm.executeQuery();
+			//处理结果
+			if (rs.next()) {				
+				if(rs.getInt("status") !=0) {
+					yorn=true;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			//释放资源
+			super.closeAll();
+		}
+		return yorn;
+	}
+
 }

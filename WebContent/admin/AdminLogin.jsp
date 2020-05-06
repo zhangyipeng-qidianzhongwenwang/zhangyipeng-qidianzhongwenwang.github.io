@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="${path }/css/pintuer.css">
     <link rel="stylesheet" href="${path }/css/admin.css">
     <script src="${path }/js/jquery.js"></script>
-    <script src="${path }/js/pintuer.js"></script>  
+    <script src="${path }/sjs/pintuer.js"></script>  
 </head>
 <body>
 <div class="bg"></div>
@@ -40,9 +40,7 @@
                         </div>
                     </div>
                    
-                   	<span style='color:red;font-size:16px'> <c:out value="${msg }"/>  </span>
-                   
-                  
+                   	<span style='color:red;font-size:16px'> <c:out value="${msg }"/>  </span>                    
                 </div>
                 <div style="padding:30px;"><input type="submit" class="button button-block bg-main text-big input-big" value="登录"></div>
             </div>

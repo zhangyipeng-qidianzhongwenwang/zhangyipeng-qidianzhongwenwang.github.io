@@ -21,7 +21,7 @@
                         <label for="L_account" class="layui-form-label">
                             <span class="x-red">*</span>类型名</label>
                         <div class="layui-input-inline">
-                            <input type="text" id="L_account" name="type"  required="" lay-verify="account" autocomplete="off" class="layui-input" onblur="fun()" >
+                            <input type="text" id="L_account" name="type"  required="" lay-verify="account" autocomplete="off" class="layui-input"  >
                     
                     </div>
                     
@@ -38,69 +38,7 @@
                 //自定义验证规则
                
                 form.onSubmit();
-                function fun() {
-        			var account = document.getElementById("account").value;
-          			//1、创建xhr对象
-          			try {
-          				xhr = new ActiveXObject("Microsoft.XMLHTTP");
-          			} catch (e) {
-          				try {
-          					xhr = new XMLHttpRequest();
-          				} catch (ee) {
-          					try {
-          						xhr = new ActiveXObject("Msxml2.XMLHTTP");
-          					} catch (eee) {
-          						alert('该换浏览器了！浏览器不支持Ajax！');
-          					}
-          				}
-          			}
-
-          			if (xhr) {
-          				//2、创建Ajax请求，Ajax也有两种请求形式get post
-          				xhr.open("post", "/hagen_dazs/AdminAdd?account="+account);
-
-          				//3、发送Ajax请求
-          				xhr.send(null);
-          				
-        				xhr.onreadystatechange = function() {
-          					if (xhr.readyState == 4) {
-          						//4、处理服务器响应
-          						var data = xhr.responseText;
-
-          						//消息展示容器
-          						var span = document.getElementById("spanNameMessage");
-          						if (data == "1") {
-          							span.style.border = "solid 1px green";
-          							span.innerHTML = '恭喜，O(∩_∩)O哈哈~可以使用';
-          						} else {
-          							span.style.border = "solid 1px red";
-          							span.innerHTML = '-_-!!!,不可以使用';
-          						}
-          					}
-          				};
-          			}
-
-          		}
-                /*
-                //监听提交
-                form.on('submit(add)',
-                function(data) {
-                    console.log(data);
-                    //发异步，把数据提交给php
-                    layer.alert("增加成功", {
-                        icon: 6
-                    },
-                    function() {
-                        //关闭当前frame
-                        xadmin.close();
-
-                        // 可以对父窗口进行刷新 
-                        xadmin.father_reload();
-                    });
-                    return false;
-                });
-				*/
-            });</script>
+               </script>
     </body>
 
 </html>

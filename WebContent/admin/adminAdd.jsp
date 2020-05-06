@@ -103,27 +103,8 @@
           					}
           				};
           			}
-
           		}
-                /*
-                //监听提交
-                form.on('submit(add)',
-                function(data) {
-                    console.log(data);
-                    //发异步，把数据提交给php
-                    layer.alert("增加成功", {
-                        icon: 6
-                    },
-                    function() {
-                        //关闭当前frame
-                        xadmin.close();
-
-                        // 可以对父窗口进行刷新 
-                        xadmin.father_reload();
-                    });
-                    return false;
-                });
-				*/
+                
             });</script>
     </body>
 

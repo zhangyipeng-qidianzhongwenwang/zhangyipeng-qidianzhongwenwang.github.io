@@ -98,7 +98,6 @@
           					if (xhr.readyState == 4) {
           						//4、处理服务器响应
           						var data = xhr.responseText;
-
           						//消息展示容器
           						var span = document.getElementById("spanNameMessage");
           						if (data == "1") {
@@ -112,26 +111,7 @@
           				};
           			}
 
-          		}
-                /*
-                //监听提交
-                form.on('submit(add)',
-                function(data) {
-                    console.log(data);
-                    //发异步，把数据提交给php
-                    layer.alert("增加成功", {
-                        icon: 6
-                    },
-                    function() {
-                        //关闭当前frame
-                        xadmin.close();
-
-                        // 可以对父窗口进行刷新 
-                        xadmin.father_reload();
-                    });
-                    return false;
-                });
-				*/
+          		}                
             });</script>
     </body>
 

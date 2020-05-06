@@ -174,35 +174,6 @@
           elem: '#end' //指定元素
         });
       });
-
-       /*用户-停用*/
-     /* function member_stop(obj,id){
-          layer.confirm('确认要停用吗？',function(index){
-              
-                window.location.href="/起点中文网/stop?id="+id;
-        
-              
-          });
-      }
-      function member_start(obj,id){
-          layer.confirm('确认要启用吗？',function(index){
-   
-                window.location.href="/起点中文网/start?id="+id;
-           
-              
-          });
-      }*/
-      
-      	/*用户-删除*/
-     /* function member_del(obj,id){
-          layer.confirm('确认要删除吗？',function(index){
-              //发异步删除数据              
-              $(obj).parents("tr").remove();             
-              layer.msg('已删除!',{icon:1,time:1000});
-              window.location.href="/起点中文网/AdminDel?id="+id;
-          });
-      }*/
-
     </script>
     <script>var _hmt = _hmt || []; (function() {
         var hm = document.createElement("script");
