@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="${path }/css/pintuer.css">
     <link rel="stylesheet" href="${path }/css/admin.css">
     <script src="${path }/js/jquery.js"></script>
-    <script src="${path }/sjs/pintuer.js"></script>  
+    <script src="${path }/js/pintuer.js"></script>  
 </head>
 <body>
 <div class="bg"></div>
