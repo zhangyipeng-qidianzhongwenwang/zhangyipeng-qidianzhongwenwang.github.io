@@ -18,6 +18,13 @@ public class Book {
 	private String writername;
 	private String typename;
 	private String Introduction;
+	private String jianjie;
+	public String getJianjie() {
+		return this.Introduction.substring(0, 20)+"...";
+	}
+	public void setJianjie(String jianjie) {
+		this.jianjie = jianjie;
+	}
 	public String getIntroduction() {
 		return Introduction;
 	}

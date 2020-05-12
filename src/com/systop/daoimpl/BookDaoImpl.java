@@ -38,6 +38,7 @@ public class BookDaoImpl extends BaseDao implements BookDao{
 				book.setWriterId(rs.getInt("writerId"));	
 				book.setTypename(this.findTypeById(rs.getInt("typeId")));
 				book.setWritername(this.findWriterById(rs.getInt("writerId")));
+				book.setIntroduction(rs.getString("Introduction"));
 				list.add(book);
 			}
 		} catch (Exception e) {
