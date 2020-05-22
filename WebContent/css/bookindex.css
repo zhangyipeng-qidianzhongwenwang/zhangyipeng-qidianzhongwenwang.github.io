@@ -1,0 +1,103 @@
+.bookinfo{
+    width: 100%;
+    height:100%;
+    display: flex;
+   margin: .625rem auto 1.875rem auto;
+   border-top: 1px solid #bf2c24;
+}
+.bookinfo img{
+    width: 9.375rem;
+    margin: .625rem;
+}
+.bookname{
+    display: block;
+    font-size: 1.5625rem;
+    margin-top: .625rem;
+}
+.writername{
+    display: block;
+    color: #666;
+}
+.bookinfo-jieshao{
+	    font-size: 14px; 
+	    color:#666;
+}
+.status{
+
+    border: 1px solid  #bf2c24;
+    font-size: .875rem;
+    color: #bf2c24;
+    border-radius: 10px;
+    padding: .125rem;
+    margin:auto 1.25rem;
+}
+p{
+    margin: .375rem auto;
+}
+.words{
+    margin: .125rem auto;
+
+}
+.bookinfo span{
+    margin: .3125rem auto;
+}
+.font{
+    color: black;
+    font-size: 1.125rem;
+}
+.danwei{
+    font-size: .875rem;
+    color: #666;
+}
+.fenge{
+    display: inline-block;
+    width: .0625rem;
+    height: .5rem;
+    background-color: #999;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.btn input{
+    width: 4.375rem;
+    height: 1.875rem;
+    color: white;
+    background-color: #bf2c24;    
+    border: none;
+    margin: .3125rem .3125rem;
+}
+.btn{
+    display: inline-block;
+}
+.fenshu{
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem;
+    width: 3.125rem;
+    height: 1.5625rem;
+    text-align: center;
+    line-height: 1.5625rem;
+    font-size: 2.25rem;
+}
+.jieshao p{
+    font-size: 1.375rem;
+    color: #bf2c24; 
+}
+.table{
+    width: 100%;
+    border-top: 1px solid #bf2c24; 
+    display: flex; 
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.table li{
+    width: 33%;
+    list-style: none;}
+.table li a{    
+    color: #666;
+    font-size: .75rem;
+    text-decoration: none;
+}
+.table li a span{
+    height: 3.125rem;
+    line-height: 3.125rem;
+}

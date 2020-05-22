@@ -5,6 +5,9 @@ package com.systop.dao;
 	import java.sql.DriverManager;
 	import java.sql.SQLException;
 	import java.sql.Statement;
+import java.util.List;
+
+import com.systop.entity.Chapter;
 
 	public class BaseDao {
 		//连接数据库参数
@@ -91,6 +94,11 @@ package com.systop.dao;
 			}
 			System.out.println("调用通用的增、删、改方法成功！");
 			return rows;// 返回受影响的行数
+		}
+
+		public List<Chapter> findById(int id) {
+			// TODO 自动生成的方法存根
+			return null;
 		}
 	}
 

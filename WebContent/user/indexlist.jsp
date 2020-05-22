@@ -9,7 +9,8 @@
     	//实例化操作对象
 	BookDao bookDao = new BookDaoImpl();
 	List<Book> list = bookDao.findBookAll();
-	request.setAttribute("list", list);%>
+	request.setAttribute("list", list);
+	%>
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +18,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>起点中文网</title>
-    <link rel="stylesheet" href="../css/userindex.css">
+    <link rel="stylesheet" href="${path }/css/userindex.css">
 </head>
 <body>
 	        <div class="book-list">
            <c:forEach items="${list }" var="admin" varStatus="s">   
             <div class="book">
-                <a href=""><img src=" ../${admin.getImg() }" alt=""></a>
+                <a href="${path }/user/bookindex.jsp" onclick="setid(${admin.getB_id()}); return false;" href="javascript:;"><img src=" ${path }/${admin.getImg() }" alt=""></a>
               <div class="message">
                 <span class="bookname">${admin.getB_name() }</span>
                 <span class="writename" >${admin.getWritername() }</span>
@@ -48,5 +49,10 @@
          </div>
 </body>
 
- 
+ <script>
+ function setid(id){     
+         window.location.href="/起点中文网/bookindex?id="+id;
+
+         }
+</script>
 </html>

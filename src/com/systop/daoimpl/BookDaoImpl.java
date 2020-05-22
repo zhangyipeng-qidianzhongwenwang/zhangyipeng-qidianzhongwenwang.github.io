@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.systop.dao.BaseDao;
 import com.systop.dao.BookDao;
+import com.systop.entity.Admin;
 import com.systop.entity.Book;
 
 public class BookDaoImpl extends BaseDao implements BookDao{
@@ -58,8 +59,40 @@ public class BookDaoImpl extends BaseDao implements BookDao{
 
 	@Override
 	public Book findBookById(int id) {
-		// TODO 自动生成的方法存根
-		return null;
+		Book book = null;
+		String sql = "select * from book where b_id = ?";
+		try {
+			//获取连接数据库地址
+			super.getConnection();
+			//创建pstmt
+			pstm = con.prepareStatement(sql);
+			//替换参数
+			pstm.setInt(1, id);
+			//执行sql语句
+			rs = pstm.executeQuery();
+			//处理结果
+			if (rs.next()) {
+				book=new Book();
+				book.setB_name(rs.getString("b_name"));
+				book.setImg(rs.getString("img"));
+				book.setStatus(rs.getInt("status"));
+				book.setTypeId(rs.getInt("typeId"));
+				book.setVip(rs.getInt("vip"));
+				book.setVotes(rs.getInt("votes"));
+				book.setWords(rs.getInt("words"));
+				book.setWriterId(rs.getInt("writerId"));	
+				book.setTypename(this.findTypeById(rs.getInt("typeId")));
+				book.setWritername(this.findWriterById(rs.getInt("writerId")));
+				book.setIntroduction(rs.getString("Introduction"));
+				book.setChapter(rs.getInt("chapter"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			//释放资源
+			super.closeAll();
+		}
+		return book;
 	}
 
 	@Override

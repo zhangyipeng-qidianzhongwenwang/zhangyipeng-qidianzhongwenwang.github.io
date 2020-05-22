@@ -18,6 +18,9 @@
     background-color: #575757;
     display: inline-block;
 }
+.x-iframe{
+	margin:0 auto;
+}
 li{
     list-style-type:none;
 }
